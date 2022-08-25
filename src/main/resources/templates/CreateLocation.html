@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateLocation</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="center">
+    <form th:action="" method="">
+        <div class="field">
+            <label for="id">Id: </label>
+            <input type="text"  th:name="id" id="id" th:required="true" minlength="5" maxlength="45"/>
+            <span></span>
+        </div>
+        <div class="field">
+            <label for="code">Code: </label>
+            <input id="code" type="text" th:name="code" th:required="true" minlength="5" maxlength="45"/>
+            <span></span>
+        </div>
+        <div class="field">
+            <label for="name">Name: </label>
+            <input id="name" type="text" th:name="name" th:required="true" minlength="5" maxlength="45"/>
+            <span></span>
+        </div>
+        <div class="field">
+            <label >Type: </label> &nbsp; &nbsp;
+            <label for="rural" >Rural: </label>
+            <input id="rural" type="radio" th:name="type" th:required="true" minlength="5" maxlength="45"/>
+            <span></span>
+            <br>
+            <label for="urban" >Urban: </label>
+            <input id="urban" type="radio" th:name="type" th:required="true" minlength="5" maxlength="45"/>
+            <span></span>
+        </div>
+        <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset">reset</button><br><br>
+    </form>
+</div>
+
+</body>
+</html>
